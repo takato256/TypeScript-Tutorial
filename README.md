@@ -1,4 +1,7 @@
-# TypeScript Next.js example
+# サバイバルTypeScript
+これは「サバイバルTypeScript」(https://typescriptbook.jp/)の写経です。
+
+## TypeScript Next.js example
 
 This is a really simple project that shows the usage of Next.js with TypeScript.
 
