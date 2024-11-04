@@ -13,8 +13,22 @@ const IndexPage: NextPage = () => {
             setLoading(false); // ローディング状態を更新する
         });
     }, []);
-    // ローティング中でなければ、画像を表示する
-    return <div>{loading || <img src={imageUrl} />}</div>
+
+    // ボタンをクリックした時に画像を読み込む処理
+    const handleClick = async () => {
+        setLoading(true);   // 読み込み中フラグを立てる
+        const newImage = await fetchImage();
+        setImageUrl(newImage.url);  // 画像URLの状態を更新する
+        setLoading(false);  // 読み込み中フラグを倒す
+    };
+
+    // ボタンを押した時に画像を表示する
+    return (
+        <div>
+            <button onClick={handleClick}>他のにゃんこも見る</button>
+            <div>{loading || <img src={imageUrl} />}</div>
+        </div>
+    );
 };
 export default IndexPage;
 
