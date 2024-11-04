@@ -1,5 +1,5 @@
 # サバイバルTypeScript
-これは「サバイバルTypeScript」(https://typescriptbook.jp/)の写経です。
+これは「[サバイバルTypeScript](https://typescriptbook.jp/)」の写経です。
 
 ## TypeScript Next.js example
 
